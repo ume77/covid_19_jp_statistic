@@ -1,48 +1,56 @@
 # covid_19_jp_statistic
-Julia program of Japanese Covid-19 statistic which uses Japanese national
 
-## How to use
+## Abstract
+
+Julia program of Japanese Covid-19 statistic which uses Japanese national government statistic data.
+
+## How to run
 
 ### 1. Install Julia
 
 [Julia Programming Language](https://julialang.org/downloads/)
 
-### 2. Start Julia REPL
+### 2. Install dependent packages (Pkgs)
+Start Julia REPL at first. For Windows cmd, enter this:
 ```
-$ julia
+> julia
 ```
-then prompt change as
+The prompt changes like:
 ```
 julia>
 ```
-### 3. Install Pkgs
-enter Pkg mode by pressing ```]```.
+Enter Pkg mode by pressing ```]``` key.
 ```
 (@v1.8) pkg>
 ```
-add packages
+Add packages:
 ```
 (@v1.8) pkg> add HTTP CSV DataFrames StringEncodings Plots
 ```
-exit by pressing ```backspace```.
+Exit by pressing ```backspace``` key.
 
-### 4. Install Jupyter Lab
+### 3. Install JupyterLab
 
-install only [Jupyter Lab](https://jupyter.org/install) or [Anaconda](https://www.anaconda.com/products/distribution)
+Install only [JupyterLab](https://jupyter.org/install) or [Anaconda](https://www.anaconda.com/products/distribution).
 
-### 5. Install IJulia
-```
-(@v1.8) pkg> add IJulia
-```
-### 6. Start Jupyter Lab
+### 4. Start JupyterLab
 
-start Jupyter Lab from Command-Prompt or Anaconda navigator
+Start JupyterLab from Command-Prompt or from Anaconda navigator.
 
-### 7. Open notebook file
+### 5. Open and run Jupyter notebook file
 ```
 covid_19_jp.ipynb
 ```
 
+## How to select a different kernel
+
+### 1. Install another version of Julia
+
+### 2. Add IJulia Pkg
+```
+(@v1.8) pkg> add IJulia
+```
+### 3. Select kernel in JupyterLab
 
 ## Data
-[Japanese government statistic datas](https://www.mhlw.go.jp/stf/covid-19/open-data.html)
+[Japanese government statistic data](https://www.mhlw.go.jp/stf/covid-19/open-data.html)
